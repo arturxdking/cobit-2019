@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de COBIT 2019</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <!-- Coluna de Domínios -->
+        <div class="domains-container">
+            <!-- EDM Block -->
+            <div class="domain">
+                <div class="domain-title">EDM – Avaliar, Dirigir e Monitorar</div>
+                <div class="subdomain" id="EDM" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                </div>
+            </div>
+
+            <!-- APO Block -->
+            <div class="domain">
+                <div class="domain-title">APO – Alinhar, Planejar e Organizar</div>
+                <div class="subdomain" id="APO" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                </div>
+            </div>
+
+            <!-- BAI Block -->
+            <div class="domain">
+                <div class="domain-title">BAI – Construir, Adquirir e Implementar</div>
+                <div class="subdomain" id="BAI" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                </div>
+            </div>
+
+            <!-- DSS Block -->
+            <div class="domain">
+                <div class="domain-title">DSS – Entregar, Servir e Suportar</div>
+                <div class="subdomain" id="DSS" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                </div>
+            </div>
+
+            <!-- MEA Block -->
+            <div class="domain">
+                <div class="domain-title">MEA – Monitorar, Avaliar e Analisar</div>
+                <div class="subdomain" id="MEA" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="placeholder-mea"></div>
+                    <div class="placeholder-mea"></div>
+                    <div class="placeholder-mea"></div>
+                    <div class="placeholder-mea"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coluna de Itens -->
+        <div class="items-container">
+            <!-- EDM Items -->
+            <div class="item" onclick="selectItem(event)" id="EDM01" data-domain="EDM">Definição e Manutenção de um Framework de Governança Assegurada</div>
+            <div class="item" onclick="selectItem(event)" id="EDM02" data-domain="EDM">Entrega de Benefícios Assegurada</div>
+            <div class="item" onclick="selectItem(event)" id="EDM03" data-domain="EDM">Otimização de Riscos Assegurada</div>
+            <div class="item" onclick="selectItem(event)" id="EDM04" data-domain="EDM">Otimização de Recursos Assegurada</div>
+            <div class="item" onclick="selectItem(event)" id="EDM05" data-domain="EDM">Engajamento com as Partes Assegurado</div>
+
+            <!-- APO Items -->
+            <div class="item" onclick="selectItem(event)" id="APO01" data-domain="APO">Framework de Gerenciamento de TI Gerenciado</div>
+            <div class="item" onclick="selectItem(event)" id="APO02" data-domain="APO">Estratégia Gerenciada</div>
+            <div class="item" onclick="selectItem(event)" id="APO03" data-domain="APO">Arquitetura Empresarial Gerenciada</div>
+            <div class="item" onclick="selectItem(event)" id="APO04" data-domain="APO">Inovação Gerenciada</div>
+            <div class="item" onclick="selectItem(event)" id="APO05" data-domain="APO">Portfolio Gerenciado</div>
+            <div class="item" onclick="selectItem(event)" id="APO06" data-domain="APO">Orçamento e Custos Gerenciados</div>
+            <div class="item" onclick="selectItem(event)" id="APO07" data-domain="APO">Recursos Humanos Gerenciados</div>
+            <div class="item" onclick="selectItem(event)" id="APO08" data-domain="APO">Relacionamentos Gerenciados</div>
+            <div class="item" onclick="selectItem(event)" id="APO09" data-domain="APO">Acordos de Serviço Gerenciados</div>
+            <div class="item" onclick="selectItem(event)" id="APO10" data-domain="APO">Fornecedores Gerenciados</div>
+            <div class="item" onclick="selectItem(event)" id="APO11" data-domain="APO">Qualidade Gerenciada</div>
+            <div class="item" onclick="selectItem(event)" id="APO12" data-domain="APO">Risco Gerenciado</div>
+            <div class="item" onclick="selectItem(event)" id="APO13" data-domain="APO">Segurança Gerenciada</div>
+            <div class="item" onclick="selectItem(event)" id="APO14" data-domain="APO">Dados Gerenciados</div>
+
+            <!-- BAI Items -->
+            <div class="item" onclick="selectItem(event)" id="BAI01" data-domain="BAI">Programas Gerenciados</div>
+            <div class="item" onclick="selectItem(event)" id="BAI02" data-domain="BAI">Definição de Requisitos Gerenciada</div>
+            <div class="item" onclick="selectItem(event)" id="BAI03" data-domain="BAI">Identificação e Construção de Soluções Gerenciada</div>
+            <div class="item" onclick="selectItem(event)" id="BAI04" data-domain="BAI">Disponibilidade e Capacidade Gerenciada</div>
+            <div class="item" onclick="selectItem(event)" id="BAI05" data-domain="BAI">Mudança Organizacional Gerenciada</div>
+            <div class="item" onclick="selectItem(event)" id="BAI06" data-domain="BAI">Mudanças de TI Gerenciadas</div>
+            <div class="item" onclick="selectItem(event)" id="BAI07" data-domain="BAI">Aceite e Transição de Mudanças de TI Gerenciadas</div>
+            <div class="item" onclick="selectItem(event)" id="BAI08" data-domain="BAI">Conhecimento Gerenciado</div>
+            <div class="item" onclick="selectItem(event)" id="BAI09" data-domain="BAI">Ativos Gerenciados</div>
+            <div class="item" onclick="selectItem(event)" id="BAI10" data-domain="BAI">Configuração Gerenciada</div>
+            <div class="item" onclick="selectItem(event)" id="BAI11" data-domain="BAI">Projetos Gerenciados</div>
+
+            <!-- DSS Items -->
+            <div class="item" onclick="selectItem(event)" id="DSS01" data-domain="DSS">Operações Gerenciadas</div>
+            <div class="item" onclick="selectItem(event)" id="DSS02" data-domain="DSS">Incidentes e Requisições de Serviço Gerenciados</div>
+            <div class="item" onclick="selectItem(event)" id="DSS03" data-domain="DSS">Problemas Gerenciados</div>
+            <div class="item" onclick="selectItem(event)" id="DSS04" data-domain="DSS">Continuidade Gerenciada</div>
+            <div class="item" onclick="selectItem(event)" id="DSS05" data-domain="DSS">Serviços de Segurança Gerenciados</div>
+            <div class="item" onclick="selectItem(event)" id="DSS06" data-domain="DSS">Controles de Processos Negócio Gerenciados</div>
+
+            <!-- MEA Items -->
+            <div class="item" onclick="selectItem(event)" id="MEA01" data-domain="MEA">Monitoração do Desempenho e da Conformidade Gerenciado</div>
+            <div class="item" onclick="selectItem(event)" id="MEA02" data-domain="MEA">Sistema de Controle Interno Gerenciado</div>
+            <div class="item" onclick="selectItem(event)" id="MEA03" data-domain="MEA">Conformidade com Regulamentos Externos Gerenciada</div>
+            <div class="item" onclick="selectItem(event)" id="MEA04" data-domain="MEA">Garantia Gerenciada</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
